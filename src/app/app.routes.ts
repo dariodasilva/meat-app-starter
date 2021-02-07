@@ -7,6 +7,6 @@ export const ROUTES: Routes = [
 
     {path: '', component: HomeComponent},
     {path: '', component: HeaderComponent},
-    {path: '', component: AboutComponent},
-    
+    {path: 'about', component: AboutComponent},
+
 ]
