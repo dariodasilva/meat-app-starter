@@ -9,7 +9,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { RestaurantesComponent } from './restaurantes/restaurantes.component'
+import { RestaurantsComponent } from '../app/restaurants/restaurants.component';
+import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
+import { RestaurantsService } from './restaurants/restaurants.service';
+
+
 
 
 @NgModule({
@@ -18,14 +22,15 @@ import { RestaurantesComponent } from './restaurantes/restaurantes.component'
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    RestaurantesComponent
+    RestaurantsComponent,
+    RestaurantComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [RestaurantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

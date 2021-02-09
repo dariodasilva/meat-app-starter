@@ -2,13 +2,15 @@ import {Routes} from '@angular/router'
 import { AboutComponent } from './about/about.component'
 import { HeaderComponent } from './header/header.component'
 import { HomeComponent } from './home/home.component'
-import { RestaurantesComponent } from './restaurantes/restaurantes.component'
+import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
+import { RestaurantsComponent } from './restaurants/restaurants.component'
 
 export const ROUTES: Routes = [
 
     {path: '', component: HomeComponent},
     {path: '', component: HeaderComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'restaurantes', component: RestaurantesComponent}
+    {path: 'restaurantes', component: RestaurantsComponent},
+    {path: 'restaurant', component: RestaurantComponent}
 
 ]
